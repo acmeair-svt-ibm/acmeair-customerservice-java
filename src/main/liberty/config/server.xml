@@ -10,7 +10,7 @@
               httpPort="9080" httpsPort="9443">
   </httpEndpoint>
 
-  <quickStartSecurity userName="admin" userPassword="adminpwd" />
+  <quickStartSecurity userName="${env.USERNAME}" userPassword="${env.PASSWORD}" />
 
   <webApplication name="acmeair-customerservice" location="${server.config.dir}/apps/acmeair-customerservice-java.war" contextRoot="/customer">
     <!-- enable visibility to third party apis -->

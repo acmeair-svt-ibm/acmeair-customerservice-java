@@ -10,6 +10,17 @@ spec:
   applicationImage: stackaa-customer 
   createKnativeService: false
   expose: true
+  env:
+  - name: USERNAME
+    value: admin
+  - name: PASSWORD
+    value: password
+  - name: MONGO_HOST
+    value: bphmongo.rtp.raleigh.ibm.com
+  - name: SECURE_SERVICE_CALLS
+    value: 'true'
+  - name: JVM_ARGS
+    value: "-Dmp.jwt.verify.publickey.location=http://stackaa-auth:9080/auth/getJwk"
   service:
     type: NodePort
     port: 9080
