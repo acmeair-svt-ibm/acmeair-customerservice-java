@@ -18,7 +18,7 @@ spec:
   - name: MONGO_HOST
     value: bphmongoc.rtp.raleigh.ibm.com
   - name: SECURE_SERVICE_CALLS
-    value: 'true'
+    value: 'false'
   - name: JVM_ARGS
     value: "-Dmp.jwt.verify.publickey.location=http://acmeair-kabanero.apps.bph44c1.cp.fyre.ibm.com/auth/getJwk"
   service:
