@@ -5,7 +5,7 @@ metadata:
     image.opencontainers.org/title: stackaa-customer
     stack.appsody.dev/id: java-openliberty
   name: stackaa-customer
-  namespace: kabanero
+  namespace: acmeair
 spec:
   applicationImage: stackaa-customer 
   createKnativeService: false
@@ -16,11 +16,11 @@ spec:
   - name: PASSWORD
     value: password
   - name: MONGO_HOST
-    value: bphmongoc.rtp.raleigh.ibm.com
+    value: acmeairmongovm.rtp.raleigh.ibm.com
   - name: SECURE_SERVICE_CALLS
     value: 'false'
   - name: JVM_ARGS
-    value: "-Dmp.jwt.verify.publickey.location=http://acmeair-kabanero.apps.svt43.os.fyre.ibm.com/auth/getJwk"
+    value: "-Dmp.jwt.verify.publickey.location=http://acmeair-acmeair.apps.acmeair44.cp.fyre.ibm.com/auth/getJwk"
   service:
     type: NodePort
     port: 9080
