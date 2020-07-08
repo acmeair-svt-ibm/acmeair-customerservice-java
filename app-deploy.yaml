@@ -24,6 +24,9 @@ spec:
   service:
     type: NodePort
     port: 9080
+    provides:
+      category: openapi
+      context: /customer
     annotations:
       prometheus.io/scrape: 'true'
   readinessProbe:
