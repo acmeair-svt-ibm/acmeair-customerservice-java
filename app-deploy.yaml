@@ -20,7 +20,7 @@ spec:
   - name: SECURE_SERVICE_CALLS
     value: 'false'
   - name: JVM_ARGS
-    value: "-Dmp.jwt.verify.publickey.location=http://aa-acmeair.apps.acmeair44.cp.fyre.ibm.com/auth/getJwk"
+    value: "-Dmp.jwt.verify.publickey.location=http://stackaa-main-acmeair.apps.acmeair44.cp.fyre.ibm.com/auth/getJwk"
   service:
     type: NodePort
     port: 9080
