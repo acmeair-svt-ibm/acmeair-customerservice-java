@@ -52,6 +52,7 @@ metadata:
     stack.appsody.dev/id: java-openliberty
     stack.appsody.dev/version: 0.2.12
   name: stackaa-customer
+  namespace: acmeair
 spec:
   applicationImage: stackaa-customer
   createKnativeService: false
