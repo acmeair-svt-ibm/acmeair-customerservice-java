@@ -97,6 +97,5 @@ spec:
       - category: openapi
         name: stackaa-auth
         namespace: acmeair
-        mountPath: /acmeair
     type: NodePort
   version: 1.0.0
