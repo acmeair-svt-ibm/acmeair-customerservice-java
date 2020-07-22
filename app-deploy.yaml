@@ -70,7 +70,7 @@ spec:
   - name: SECURE_SERVICE_CALLS
     value: 'false'
   - name: JVM_ARGS
-    value: "-Dmp.jwt.verify.publickey.location=http://stackaa-auth-acmeair.apps.acme42.cp.fyre.ibm.com/auth/getJwk"
+    value: "-Dmp.jwt.verify.publickey.location=http://aa-acmeair.apps.acme42.cp.fyre.ibm.com/auth/getJwk"
   livenessProbe:
     failureThreshold: 12
     httpGet:
@@ -93,5 +93,10 @@ spec:
     provides:
       category: openapi
       context: /customer
+    consumes:
+      - category: openapi
+        name: stackaa-auth
+        namespace: acmeair
+        mountPath: /acmeair
     type: NodePort
   version: 1.0.0
