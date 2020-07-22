@@ -69,8 +69,6 @@ spec:
     value: acmeairmongovmrh.rtp.raleigh.ibm.com
   - name: SECURE_SERVICE_CALLS
     value: 'false'
-  - name: JVM_ARGS
-    value: "-Dmp.jwt.verify.publickey.location=http://aa-acmeair.apps.acme42.cp.fyre.ibm.com/auth/getJwk"
   livenessProbe:
     failureThreshold: 12
     httpGet:
