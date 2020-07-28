@@ -62,7 +62,7 @@ public class CustomerServiceRestInternal {
   @Path("/validateid")
   @Consumes({ "application/x-www-form-urlencoded" })
   @Produces("application/json")
-  @SimplyTimed(name="validateCustomer", tags= {"app=acmeair-customerservice-java"})
+  @SimplyTimed(name="validateCustomer", tags = "app=acmeair-customerservice-java")
   public LoginResponse validateCustomer( 
       @FormParam("login") String login,
       @FormParam("password") String password) {
